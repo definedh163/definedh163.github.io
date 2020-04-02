@@ -16,8 +16,12 @@
 <link rel="stylesheet" href="/css/mic_main.css" />
 <link rel="stylesheet" href="/css/dropdownMenu.css" />
 <meta name="keywords" content="defined" />
-<!--prettify代码高亮主题css引入-->
-<link href="/plugins/prettify/prettify.css" rel="stylesheet" />
+<link
+  rel="stylesheet"
+  href="/css/prettify.css"
+  media="screen"
+  type="text/css"
+/>
 
 <script
   async
@@ -256,13 +260,24 @@
         <!-- 文章列表   end -->
         <!-- Main 主要部分 end -->
         <!-- footer  页码 start-->
-        <!--prettify代码高亮脚本引入-->
-<script src="/plugins/prettify/prettify.js"></script>
+        <!-- 2017.6.11，masikkk新增，加载本地Google Prettify 代码高亮js代码 -->
+<script src="/js/prettify.js"></script>
+<!-- 2017.6.11，masikkk新增，用于Google Prettify 代码高亮，给pre标签添加class "prettyprint linenums"，有行号 -->
+<!-- jQuery的$(window).load(function(){})是在页面所有元素(包括所有css,js,图片,Flash等)加载完毕后执行
 <script type="text/javascript">
-  $(window).load(function() {
-    $("pre")
-      .addClass("prettyprint linenums")
-      .attr("style", "overflow:auto;");
+$(window).load(function(){
+ $('pre').addClass('prettyprint linenums');
+ $('code').addClass('prettyprint');
+ prettyPrint();
+ })
+</script>
+-->
+<!-- 2017.7.1，masikkk添加，用于Google Prettify 代码高亮，给pre标签添加class "prettyprint linenums"，有行号 -->
+<!-- jQuery的$(document).ready(function(){})是当页面的标准DOM元素被解析成DOM树后就执行 -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("pre").addClass("prettyprint linenums");
+    $("code").addClass("prettyprint");
     prettyPrint();
   });
 </script>

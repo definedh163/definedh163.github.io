@@ -16,8 +16,12 @@
 <link rel="stylesheet" href="/css/mic_main.css" />
 <link rel="stylesheet" href="/css/dropdownMenu.css" />
 <meta name="keywords" content="defined" />
-<!--prettify代码高亮主题css引入-->
-<link href="/plugins/prettify/prettify.css" rel="stylesheet" />
+<link
+  rel="stylesheet"
+  href="/css/prettify.css"
+  media="screen"
+  type="text/css"
+/>
 
 <script
   async
@@ -186,22 +190,14 @@
 <blockquote><p>引用类 3</p>
 <footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="noopener">Welcome to Island Marketing</a></cite></footer></blockquote>
 
-<pre><code>普通代码块
-alert(&#39;Hello World!&#39;);</code></pre>
+<figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">普通代码块</span><br><span class="line"><span class="function"><span class="title">alert</span>(<span class="string">'Hello World!'</span>);</span></span><br></pre></td></tr></table></figure>
 
-<pre><code>指定语言
-[rectangle setX: 10 y: 10 width: 20 height: 20];</code></pre>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">指定语言</span><br><span class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];</span><br></pre></td></tr></table></figure>
 
-<pre><code>array.map(callback[, thisArg])</code></pre>
+<figure class="highlight cpp"><figcaption><span>附加说明</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">array</span>.<span class="built_in">map</span>(callback[, thisArg])</span><br></pre></td></tr></table></figure>
 
-<pre class="prettyprint">class Voila {
-public:
-  // Voila
-  static const string VOILA = "Voila";
-
-  // will not interfere with embedded <a href="#voila2">tags</a>.
-}</pre>
-
+<p><cod class="prettyprint">class Voila {<br>public:<br>// Voila<br>static const string VOILA = “Voila”;</cod></p>
+<p>// will not interfere with embedded <a href="#voila2">tags</a>.<br>}</p>
 <hr>
 
             </div>
