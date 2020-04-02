@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>hello-world</title>
+      <link href="/2017/03/27/hello-world/"/>
+      <url>/2017/03/27/hello-world/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Algorithm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签1 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试</title>
+      <link href="/2017/03/27/day1/"/>
+      <url>/2017/03/27/day1/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr><blockquote><p>引用类 0</p></blockquote><blockquote><p>引用类 1</p><footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote><blockquote><p>引用类 2</p><footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="noopener">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote><blockquote><p>引用类 3</p><footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="noopener">Welcome to Island Marketing</a></cite></footer></blockquote><pre><code>普通代码块alert(&#39;Hello World!&#39;);</code></pre><pre><code>指定语言[rectangle setX: 10 y: 10 width: 20 height: 20];</code></pre><pre><code>array.map(callback[, thisArg])</code></pre><pre>  <code class="language-css">    p { color: red }    </code></pre><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 测试类2 </category>
+          
+          <category> 测试类3 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 测试类,测试类1 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
