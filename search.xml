@@ -21,7 +21,7 @@
       <link href="/2020/04/28/javaScript/"/>
       <url>/2020/04/28/javaScript/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr><h1 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a><strong>个人总结</strong></h1><h2 id="Es6"><a href="#Es6" class="headerlink" title="Es6 ^"></a><strong>Es6 ^</strong></h2><!-- <img src="/assets/img/wife.jpg" class="[class names]" width="500" height="500" title="title text" alt="alt text" loading="lazy"> --><!-- ![Audits - Lighthouse](/assets/img/wife.jpg) _注释_ --><pre>  <code class="language-js">    var a=[]    </code></pre><pre>  <code class="language-css">    p { color: red }    </code></pre><hr>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr><!-- # **个人总结**## **Es6 ^** --><!-- <img src="/assets/img/wife.jpg" class="[class names]" width="500" height="500" title="title text" alt="alt text" loading="lazy"> --><!-- ![Audits - Lighthouse](/assets/img/wife.jpg) _注释_ --><pre>  <code class="language-js">    var a=[]    </code></pre><pre>  <code class="language-css">    p { color: red }    </code></pre><hr>]]></content>
       
       
       <categories>
