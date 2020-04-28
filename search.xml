@@ -4,23 +4,38 @@
   
     
     <entry>
-      <title>hello-world</title>
-      <link href="/2017/03/27/hello-world/"/>
-      <url>/2017/03/27/hello-world/</url>
+      <title>vue</title>
+      <link href="/2020/04/28/vue/"/>
+      <url>/2020/04/28/vue/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JavaScript</title>
+      <link href="/2020/04/28/javaScript/"/>
+      <url>/2020/04/28/javaScript/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id><a href="#" class="headerlink" title></a></h2><hr><pre>  <code class="language-css">    </code></pre><hr>]]></content>
+      
+      
       <categories>
           
-          <category> Algorithm </category>
+          <category> JavaScript </category>
+          
+          <category> JS </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 标签1 </tag>
+            <tag> JavaScript,JS </tag>
             
         </tags>
       
@@ -29,25 +44,160 @@
     
     
     <entry>
-      <title>测试</title>
-      <link href="/2017/03/27/day1/"/>
-      <url>/2017/03/27/day1/</url>
+      <title>iview</title>
+      <link href="/2020/04/28/iview/"/>
+      <url>/2020/04/28/iview/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr><blockquote><p>引用类 0</p></blockquote><blockquote><p>引用类 1</p><footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote><blockquote><p>引用类 2</p><footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="noopener">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote><blockquote><p>引用类 3</p><footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="noopener">Welcome to Island Marketing</a></cite></footer></blockquote><pre><code>普通代码块alert(&#39;Hello World!&#39;);</code></pre><pre><code>指定语言[rectangle setX: 10 y: 10 width: 20 height: 20];</code></pre><pre><code>array.map(callback[, thisArg])</code></pre><pre>  <code class="language-css">    p { color: red }    </code></pre><hr>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>##</p><hr><pre>  <code class="language-css">    </code></pre><hr>]]></content>
       
       
       <categories>
           
-          <category> 测试类2 </category>
+          <category> iview </category>
           
-          <category> 测试类3 </category>
+          <category> UI </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 测试类,测试类1 </tag>
+            <tag> iview,UI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ant-design</title>
+      <link href="/2020/04/28/ant-design/"/>
+      <url>/2020/04/28/ant-design/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="javaScript"><a href="#javaScript" class="headerlink" title="javaScript"></a>javaScript</h2><hr><pre>  <code class="language-css">    </code></pre><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> ant-design </category>
+          
+          <category> UI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ant-design,UI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CSS</title>
+      <link href="/2020/04/28/css/"/>
+      <url>/2020/04/28/css/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="javaScript"><a href="#javaScript" class="headerlink" title="javaScript"></a>javaScript</h2><hr><pre>  <code class="language-css">    </code></pre><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> CSS </category>
+          
+          <category> Style </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CSS,Style </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>TypeScript</title>
+      <link href="/2020/04/28/typeScript/"/>
+      <url>/2020/04/28/typeScript/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h2><hr><pre>  <code class="language-css">    </code></pre><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> TypeScript </category>
+          
+          <category> TS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> TypeScript,TS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Echarts</title>
+      <link href="/2020/04/28/ECharts/"/>
+      <url>/2020/04/28/ECharts/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="javaScript"><a href="#javaScript" class="headerlink" title="javaScript"></a>javaScript</h2><hr><pre>  <code class="language-css">    </code></pre><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> Echarts </category>
+          
+          <category> Charts </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Echarts,Charts </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mqtt</title>
+      <link href="/2020/04/28/mqtt-for-vue/"/>
+      <url>/2020/04/28/mqtt-for-vue/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="javaScript"><a href="#javaScript" class="headerlink" title="javaScript"></a>javaScript</h2><hr><pre>  <code class="language-css">    </code></pre><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mqtt </category>
+          
+          <category> 消息队列 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mqtt,消息队列 </tag>
             
         </tags>
       
