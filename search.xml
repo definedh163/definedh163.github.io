@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>个人总结</title>
+      <link href="/2020/07/28/%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93/"/>
+      <url>/2020/07/28/%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h1 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h1><h2 id="iview-table-实时数据更新"><a href="#iview-table-实时数据更新" class="headerlink" title="iview table 实时数据更新"></a>iview table 实时数据更新</h2><hr><p><img src="/img/%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%931.png" alt="Audits - Lighthouse" loading="lazy"> <em>Demo</em></p><p><img src="/img/%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%931%E5%81%87%E6%95%B0%E6%8D%AEcolumns.png" alt="Audits - Lighthouse" loading="lazy"> <em>假数据 columns</em></p><p><img src="/img/%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%931%E5%81%87%E6%95%B0%E6%8D%AEtableData.png" alt="Audits - Lighthouse" loading="lazy"> <em>假数据 tableData</em></p><pre>  <code class="language-js">  //这个函数主要作用是实现iview table 实时数据更新   getTableData() {      var newColumns = JSON.parse(JSON.stringify(this.columns));      var array = [];      for (let k in newColumns) {        let {key} = newColumns[k]        if (          key != 'dataTime' &&          key != 'enterpriseName' &&          key != 'pointName'        ) {          //排除掉一些无需render 的数据字段          for (let i in newColumns[k]) {            if (i == 'key') {              //排除除了 key 的所有其他字段              let item = {                title: this.columns[k].title,                align: 'center',                render: (h, params) => {                  return h('InputNumber', {                    props: {                      value: Number(params.row[newColumns[k][i]])                    },                    on: {                      'on-change': event => {                        if (event) {                          for (let j in params.row) {                            if (j == newColumns[k][i]) {                              params.row[j] = String(event);                              //ajax 将这条row 传给后台 然后刷新表单数据                              this.$Message.success('修改成功');                              console.log('修改后的row', params.row);                            } else {                              continue;                            }                          }                        }                      }                    }                  });                }              };              array.push(item);            } else {              continue;            }          }        } else {          //将 排除掉的字段从新加进来          array.push(this.columns[k]);        }      }      //赋值 (注意点: 如果没有赋值这个操作上面item 的render params是拿不到row的数据的)      this.columns = array;    },  </code></pre><hr><h2 id="menu-鉴权增删匹配"><a href="#menu-鉴权增删匹配" class="headerlink" title="menu 鉴权增删匹配"></a>menu 鉴权增删匹配</h2><hr><pre>  <code class="language-js"> getUserMenuData(menuData(组件完整menu数组), routeTable(筛选后的路由表)) {      for (var i = 0; i < menuData.length; i++) {        if (menuData[i].children) {          //循环二级菜单 和 路由表路径对比,得出不同项          for (var j = 0; j < menuData[i].children.length; j++) {            var obj = menuData[i].children[j]            var childrenPath = obj.to            var isExist = false            for (var k = 0; k < routeTable.length; k++) {              var Obj = routeTable[k]              var routeTablePath = Obj.path              if (childrenPath == routeTablePath) {                isExist = true                break              }            }            if (!isExist) {              menuData[i].children.splice(j, 1) //将无权限menu删除              j--            }          }        }        if (menuData[i].children.length == 0) {          //如果1级菜单的children没有menu,则删掉这个1级菜单          menuData.splice(i, 1)          i--        }else{          //否则跳过          continue;        }      }      return menuData //返回最后得到的menu列表    }  </code></pre><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> all </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> all </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vue篇</title>
       <link href="/2020/05/28/vue/"/>
       <url>/2020/05/28/vue/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h2 id><a href="#" class="headerlink" title></a>    <div id="aplayer-ZbKHRoIj" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="497572729" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#C20C0C"></div></h2><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><p>之前用很多种方式总结过 Vue ,但是由于阶段性知识面的不同,总结方式也有所不同.所以打算换个方式结合工作在博客整理一下关于自己对 Vue 的一些使用心得.</p><footer><strong>喧嚣</strong><cite><a href="https://cn.vuejs.org/v2/guide/" target="_blank" rel="noopener">Vue</a></cite></footer></blockquote><h2 id="组件传参方式"><a href="#组件传参方式" class="headerlink" title="组件传参方式"></a>组件传参方式</h2><h4 id="v-bind"><a href="#v-bind" class="headerlink" title="v-bind"></a><strong>v-bind</strong></h4><h5 id="v-bind-父向子"><a href="#v-bind-父向子" class="headerlink" title="v-bind 父向子"></a>v-bind 父向子</h5><ul><li><p><strong>父组件</strong></p><pre>     <code class="js">< parent-component :data="data" > < /parent-component>     </code></pre></li></ul><ul><li><p><strong>子组件</strong></p>  <pre>     <code class="js">props: {  data: {    type: Object,    default: function() {      return {};    }  }}     </code></pre></li></ul><h5 id="v-bind-子向父"><a href="#v-bind-子向父" class="headerlink" title="v-bind 子向父"></a>v-bind 子向父</h5><ul><li><p><strong>父组件</strong></p><pre>     <code class="js">@: html  < parent-component @fun="fun" > < /parent-component>@: js  fun(value){    }     </code></pre></li><li><p><strong>子组件</strong></p>  <pre>     <code class="js"> @: js   this.$emit('fun')     </code></pre></li></ul><hr><h5 id="v-modal-父向子"><a href="#v-modal-父向子" class="headerlink" title="v-modal 父向子"></a>v-modal 父向子</h5><ul><li><p><strong>父组件</strong></p><pre>     <code class="js">< parent-component :data="data" > < /parent-component>     </code></pre></li></ul><ul><li><p><strong>子组件</strong></p>  <pre>     <code class="js">props: {  data: {    type: Object,    default: function() {      return {};    }  }}     </code></pre></li></ul><h5 id="v-bind-子向父-1"><a href="#v-bind-子向父-1" class="headerlink" title="v-bind 子向父"></a>v-bind 子向父</h5><ul><li><p><strong>父组件</strong></p><pre>     <code class="js">@: html  < parent-component @fun="fun" > < /parent-component>@: js  fun(value){    }     </code></pre></li><li><p><strong>子组件</strong></p>  <pre>     <code class="js"> <label style="color:red; font-weight: 900; display:inline-block; width:150px; height:30px; background-color: #2d8cf0;">@: js</label>   this.$emit('fun')     </code></pre></li></ul><hr>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h2 id><a href="#" class="headerlink" title></a>    <div id="aplayer-NAbYloeq" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="497572729" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#C20C0C"></div></h2><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><p>之前用很多种方式总结过 Vue ,但是由于阶段性知识面的不同,总结方式也有所不同.所以打算换个方式结合工作在博客整理一下关于自己对 Vue 的一些使用心得.</p><footer><strong>喧嚣</strong><cite><a href="https://cn.vuejs.org/v2/guide/" target="_blank" rel="noopener">Vue</a></cite></footer></blockquote><h2 id="组件传参方式"><a href="#组件传参方式" class="headerlink" title="组件传参方式"></a>组件传参方式</h2><h4 id="v-bind"><a href="#v-bind" class="headerlink" title="v-bind"></a><strong>v-bind</strong></h4><h5 id="v-bind-父向子"><a href="#v-bind-父向子" class="headerlink" title="v-bind 父向子"></a>v-bind 父向子</h5><ul><li><p><strong>父组件</strong></p><pre>     <code class="language-js">< parent-component :data="data" > < /parent-component>     </code></pre></li></ul><ul><li><p><strong>子组件</strong></p>  <pre>     <code class="language-js">props: {  data: {    type: Object,  //多种数据类型    default: function() {      return {}; //未接受参数默认返回值    }  }}     </code></pre></li></ul><h5 id="v-bind-子向父"><a href="#v-bind-子向父" class="headerlink" title="v-bind 子向父"></a>v-bind 子向父</h5><ul><li><p><strong>父组件</strong></p><pre>     <code class="language-js">@: html  < parent-component @fun="fun" > < /parent-component>@: js  fun(value){    }     </code></pre></li><li><p><strong>子组件</strong></p>  <pre>     <code class="language-js"> @: js   this.$emit('fun',params)     </code></pre></li></ul><hr><h4 id="v-modal"><a href="#v-modal" class="headerlink" title="v-modal"></a><strong>v-modal</strong></h4><h5 id="v-modal-父向子-写法一"><a href="#v-modal-父向子-写法一" class="headerlink" title="v-modal 父向子 (写法一)"></a>v-modal 父向子 (写法一)</h5><ul><li><p><strong>父组件</strong></p><pre>     <code class="language-js">< parent-component  v-model="data" > < /parent-component>     </code></pre></li></ul><ul><li><p><strong>子组件</strong></p>  <pre>     <code class="language-js">props: {  value: {  //必须是value    type: Object,    default: function() {      return {};    }  }}     </code></pre></li></ul><h5 id="v-modal-子向父"><a href="#v-modal-子向父" class="headerlink" title="v-modal 子向父"></a>v-modal 子向父</h5><ul><li><p><strong>子组件</strong></p>  <pre>     <code class="language-js"> <label style="color:red; font-weight: 900; display:inline-block; width:150px; height:30px; background-color: #2d8cf0;">@: js</label>   this.$emit("input",params)  //必须是input     </code></pre></li></ul><hr>]]></content>
       
       
       <categories>
@@ -208,6 +233,33 @@
         <tags>
             
             <tag> Style </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo</title>
+      <link href="/2020/04/28/hexo/"/>
+      <url>/2020/04/28/hexo/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><hr><!-- # **个人总结**## **Es6 ^** --><p><img src="/img/%E8%89%BE%E7%B1%B3%E4%B8%BD%E5%A8%85.JPG" alt="Audits - Lighthouse" loading="lazy"> <em>从零开始的异世界生活</em></p><!-- ![Audits - Lighthouse](/assets/img/wife.jpg) _注释_ --><pre>  <code class="language-js">    var a=[]    </code></pre><pre>  <code class="language-css">    p { color: red }    </code></pre><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript,JS </tag>
             
         </tags>
       
